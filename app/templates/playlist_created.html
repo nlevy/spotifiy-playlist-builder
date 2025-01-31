@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Playlist Created Successfully!</h4>
+        <p>Your playlist "{{ playlist_name }}" has been created with {{ track_count }} tracks.</p>
+    </div>
+    <div class="mt-4">
+        <a href="{{ playlist_url }}" class="btn btn-success" target="_blank">
+            <i class="bi bi-spotify"></i> Open in Spotify
+        </a>
+        <a href="{{ url_for('create') }}" class="btn btn-primary">Create Another Playlist</a>
+        <a href="{{ url_for('bands') }}" class="btn btn-secondary">Back to Artists</a>
+    </div>
+</div>
+{% endblock %} 
