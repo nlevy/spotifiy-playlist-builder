@@ -1,0 +1,21 @@
+.artist-image {
+  width: 100%;
+  height: 414px;
+  object-fit: cover;
+}
+
+.card {
+  margin-bottom: 20px;
+  height: auto !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .artist-image {
+    height: 250px; /* Even smaller height on mobile */
+  }
+
+  .card {
+    max-width: 100%; /* Ensure cards don't overflow */
+  }
+}

@@ -3,12 +3,12 @@
 {% block content %}
 <div class="container mt-5">
     <h2>My Top Artists</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         {% for band in bands %}
         <div class="col">
-            <div class="card h-100">
+            <div class="card">
                 {% if band.images %}
-                <img src="{{ band.images[0].url }}" class="card-img-top" alt="{{ band.name }}">
+                <img src="{{ band.images[0].url }}" class="card-img-top artist-image" alt="{{ band.name }}">
                 {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">{{ band.name }}</h5>
